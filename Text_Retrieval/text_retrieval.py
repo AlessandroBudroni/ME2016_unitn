@@ -1,6 +1,8 @@
 # RETURNS THE LINKS OF THE WEBPAGES WHERE THE IMAGES ARE
 # THE IMAGES ARE THE SIMILAR IMAGES RETURNED BY GOOGLE IMAGE SEARCH
 
+# --->>> FORGOT TO FILTER OUT NON ENGLISH PAGES !!!!!!!!!!
+
 # web browser call handler
 import webbrowser
 # python sftp
@@ -13,6 +15,9 @@ import urllib2
 # cookies
 from cookielib import CookieJar
 
+#saltava fuori un errore di filePath non definito
+#adesso non piu anche se la soluzione e un po provvisoria
+#filePath = ''
 
 def find_related_images(path):
 # controlla perche non so se fa qualcosa davvero
@@ -26,12 +31,15 @@ def find_related_images(path):
   searchUrl = 'https://www.google.com/searchbyimage/upload'
   
   multipart = {'encoded_image': (path, open(path, 'rb')), 'image_content': ''}
-
+  
   # send request
   response = requests.post(searchUrl, files=multipart, allow_redirects = False)
   fetchUrl = response.headers['Location']
-
+  
   source = opener.open(fetchUrl).read()
-
-  links = re.findall('"ou":"(.*?)","ow"', source)
-  return links
+  
+  findLinks = re.findall(r' data-deferred="1" height=".*?" style="margin-top:0px;margin-right:0px;margin-bottom:0;margin-left:0px" title="(.*?)"',source)
+  for eachUrl in findLinks:
+    print(eachUrl)
+  
+  return findLinks
