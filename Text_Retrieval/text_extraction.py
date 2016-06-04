@@ -41,16 +41,20 @@ for currEvent in events:
   if currEvent == 'Non-Class':
     images = [images[-1]]
   for currImage in images:
-    print('--- FOR IMAGE')
-    links = text_retrieval.find_related_images(mainPath+currEvent+'/'+currImage) 
-
-    numArticle = 1
-    os.mkdir(mainPath+currEvent+'/'+currImage[0:6])
-    linkFile = open(mainPath+currEvent+'/'+currImage[0:6]+'/'+'links.txt','w')
+    if not ((".jpeg" in currImage) or (".jpg" in currImage) or (".png" in currImage) or (".gif" in currImage) or (".svg" in currImage)):
+        continue
+    print('--- FOR IMAGE %s' % currImage)
+    links = text_retrieval.find_related_images(mainPath+currEvent+'/'+currImage)
+    currImageName = file_navigator.extract_name(currImage)
+    if not os.path.exists(mainPath+currEvent+'/'+currImageName):
+      os.mkdir(mainPath+currEvent+'/'+currImageName)
+    linkFile = open(mainPath+currEvent+'/'+currImageName+'/'+'links.txt','w')
     for url in links:
-      linkFile.write('%s ' % url)
+      linkFile.write('%s\n' % url)
     linkFile.close()
 
+''' I'm commenting this for the moment because I didn't get really what it does and it's slow
+    numArticle = 1
     for url in links:
       print('FOR LOOP')
       try:
@@ -76,5 +80,4 @@ for currEvent in events:
         numArticle += 1
       except:
         print('Bad Link')
-        numArticle += 1
-
+        numArticle += 1     '''
