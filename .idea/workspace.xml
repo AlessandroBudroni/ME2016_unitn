@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1c20862a-6a5d-4e21-b406-2af8ccd0f3bf" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/Google_output.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/example_links.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/format_text.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/giss/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/giss/demo.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/giss/gis-scrape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/giss/useragents.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/AUTHORS.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/HISTORY.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/MANIFEST.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/NOTICE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/README.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/adapters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/api.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/auth.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/cacert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/certs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/cookies.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/hooks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/big5freq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/big5prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/chardetect.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/chardistribution.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/charsetgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/charsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/codingstatemachine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/cp949prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/escprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/escsm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/eucjpprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/euckrfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/euckrprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/euctwfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/euctwprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/gb2312freq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/gb2312prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/hebrewprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/jisfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/jpcntx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/langbulgarianmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/langcyrillicmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/langgreekmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/langhebrewmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/langhungarianmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/langthaimodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/latin1prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/mbcharsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/mbcsgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/mbcssm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/sbcharsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/sbcsgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/sjisprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/universaldetector.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/chardet/utf8prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/_collections.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/connection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/connectionpool.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/contrib/appengine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/contrib/ntlmpool.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/contrib/pyopenssl.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/fields.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/filepost.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/packages/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/packages/ordered_dict.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/packages/six.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/poolmanager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/request.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/response.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/util/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/util/connection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/util/request.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/util/response.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/util/retry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/util/ssl_.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/util/timeout.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/packages/urllib3/util/url.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/status_codes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/structures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/build/lib/requests/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/dist/requests-2.9.1-py2.7.egg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/_static/konami.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/_static/requests-sidebar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/_templates/hacks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/_templates/sidebarintro.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/_templates/sidebarlogo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/_themes/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/_themes/flask_theme_support.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/api.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/community/faq.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/community/out-there.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/community/recommended.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/community/release-process.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/community/support.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/community/updates.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/community/vulnerabilities.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/conf.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/dev/authors.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/dev/contributing.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/dev/philosophy.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/dev/todo.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/make.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/user/advanced.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/user/authentication.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/user/install.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/user/intro.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/docs/user/quickstart.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/ext/requests-logo.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/ext/requests-logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests.egg-info/not-zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests.egg-info/requires.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/adapters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/api.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/auth.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/cacert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/certs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/cookies.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/hooks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/README.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/big5freq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/big5prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/chardetect.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/chardistribution.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/charsetgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/charsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/codingstatemachine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/cp949prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/escprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/escsm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/eucjpprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/euckrfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/euckrprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/euctwfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/euctwprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/gb2312freq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/gb2312prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/hebrewprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/jisfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/jpcntx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/langbulgarianmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/langcyrillicmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/langgreekmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/langhebrewmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/langhungarianmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/langthaimodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/latin1prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/mbcharsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/mbcsgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/mbcssm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/sbcharsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/sbcsgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/sjisprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/universaldetector.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/chardet/utf8prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/_collections.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/connection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/connectionpool.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/contrib/appengine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/contrib/ntlmpool.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/contrib/pyopenssl.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/fields.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/filepost.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/packages/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/packages/ordered_dict.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/packages/six.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/poolmanager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/request.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/response.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/util/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/util/connection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/util/request.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/util/response.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/util/retry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/util/ssl_.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/util/timeout.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/packages/urllib3/util/url.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/status_codes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/structures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requests/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requirements-to-freeze.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/requirements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/tests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/tests/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/tests/conftest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/tests/test_hooks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/tests/test_lowlevel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/tests/test_requests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/tests/test_structures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/tests/test_testserver.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/tests/test_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/requests/tests/testserver/server.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Text_Retrieval/text_retrieval_norequests.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Text_Retrieval/file_navigator.py" afterPath="$PROJECT_DIR$/Text_Retrieval/file_navigator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Text_Retrieval/text_extraction.py" afterPath="$PROJECT_DIR$/Text_Retrieval/text_extraction.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Text_Retrieval/text_retrieval.py" afterPath="$PROJECT_DIR$/Text_Retrieval/text_retrieval.py" />
+    </list>
+    <ignored path="ME2016_unitn.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ME2016_unitn" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="text_extraction.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Text_Retrieval/text_extraction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text_retrieval.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Text_Retrieval/text_retrieval.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="35" column="33" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_navigator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Text_Retrieval/file_navigator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="27" column="16" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Text_Retrieval/text_retrieval.py" />
+        <option value="$PROJECT_DIR$/Text_Retrieval/format_text.py" />
+        <option value="$PROJECT_DIR$/Text_Retrieval/file_navigator.py" />
+        <option value="$PROJECT_DIR$/Text_Retrieval/text_extraction.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="773" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ME2016_unitn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ME2016_unitn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ME2016_unitn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ME2016_unitn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ME2016_unitn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Text_Retrieval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="ME2016_unitn" sdk-home="/usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/bin/python2.7" working-directory="$PROJECT_DIR$">
+        <option name="mySdkHome" value="/usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+        <option name="myModuleName" value="ME2016_unitn" />
+        <option name="myWorkingDirectory" value="$PROJECT_DIR$" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.text_extraction">
+    <configuration default="false" name="text_extraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Text_Retrieval" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ME2016_unitn" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Text_Retrieval/text_extraction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ME2016_unitn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ME2016_unitn" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ME2016_unitn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ME2016_unitn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ME2016_unitn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ME2016_unitn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ME2016_unitn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.text_extraction" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.text_extraction" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c20862a-6a5d-4e21-b406-2af8ccd0f3bf" name="Default" comment="" />
+      <created>1465056113616</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1465056113616</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25038168" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45038167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="10" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file:///usr/local/lib/python2.7/site-packages/requests-2.9.1-py2.7.egg/requests/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="292" column="4" selection-start-line="292" selection-start-column="4" selection-end-line="292" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="339" column="25" selection-start-line="339" selection-start-column="25" selection-end-line="339" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="172" column="11" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/site-packages/requests-2.9.1-py2.7.egg/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/site-packages/requests-2.9.1-py2.7.egg/requests/structures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/site-packages/image_scraper/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Download_Tweets/findTweet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Download_Tweets/getData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/site-packages/image_scraper/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/site-packages/image_scraper/mains.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="72" column="42" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Text_Retrieval/format_text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Text_Retrieval/text_retrieval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Text_Retrieval/file_navigator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Text_Retrieval/text_extraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
