@@ -5,7 +5,7 @@
 # IF A NUMBER.TXT FILE IS MISSING THEN IT WAS A BAD LINK
 
 import file_navigator
-import text_retrieval
+import link_retrieval
 import os
 import sys
 import urllib
@@ -41,16 +41,21 @@ for currEvent in events:
   if currEvent == 'Non-Class':
     images = [images[-1]]
   for currImage in images:
-    print('--- FOR IMAGE')
-    links = text_retrieval.find_related_images(mainPath+currEvent+'/'+currImage) 
-
-    numArticle = 1
-    os.mkdir(mainPath+currEvent+'/'+currImage[0:6])
-    linkFile = open(mainPath+currEvent+'/'+currImage[0:6]+'/'+'links.txt','w')
+    if not ((".jpeg" in currImage) or (".jpg" in currImage) or (".png" in currImage) or (".gif" in currImage) or (".svg" in currImage)):
+        continue
+    print('--- FOR IMAGE %s' % currImage)
+    links = link_retrieval.find_related_links(mainPath + currEvent + '/' + currImage)
+    currImageName = file_navigator.extract_name(currImage)
+    if not os.path.exists(mainPath+currEvent+'/'+currImageName):
+      os.mkdir(mainPath+currEvent+'/'+currImageName)
+    linkFile = open(mainPath+currEvent+'/'+currImageName+'/'+'links.txt','w')
     for url in links:
-      linkFile.write('%s ' % url)
+      linkFile.write('%s\n' % url)
     linkFile.close()
 
+# text extraction from related links and save
+
+    numArticle = 1
     for url in links:
       print('FOR LOOP')
       try:
@@ -68,13 +73,12 @@ for currEvent in events:
         textNoPunct = textNoPunct.lower()
 
         textNoPunct = re.sub(r" +", r" ", textNoPunct)
-  #print(textNoPunct)
   
-        text_file = open(mainPath+currEvent+'/'+currImage[0:6]+'/'+str(numArticle)+'.txt','w')
+        text_file = open(mainPath+currEvent+'/'+currImageName+'/'+str(numArticle)+'.txt','w')
         text_file.write('%s' % textNoPunct)
         text_file.close()
         numArticle += 1
+
       except:
         print('Bad Link')
         numArticle += 1
-

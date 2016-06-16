@@ -1,5 +1,6 @@
 import os
 import sys
+import image_scraper
 
 # function to navigate all the files in a folder
 # returns the list of the files
@@ -23,3 +24,10 @@ def list_images(path):
     if not img.startswith('.'):
       img_list.append(img)
   return os.listdir(path)
+
+def extract_name(full_name):
+  if ".jpeg" in full_name:
+    name = full_name[:-5]
+  else:
+    name = full_name[:-4]
+  return name
