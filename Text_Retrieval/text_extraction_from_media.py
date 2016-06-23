@@ -51,6 +51,7 @@ def getTextFromVideoLink(l):
     except:
         return 'Bad Link'
 
+
 # END FUNCTION DECLARATION
 
 
@@ -74,15 +75,18 @@ multimedia_dev_details = output_dir + '/multimedia_dev_details.csv'
 db_file = os.path.join(output_dir, 'dev.db')
 
 # for debugging, remove file if existed
-if os.path.isfile(db_file):
+useExistingDB = 0 # assign to 1 if wanna use the existing DB
+
+if useExistingDB == 0 and os.path.isfile(db_file):
     os.remove(db_file)
 
 # connect to database
 conn = sqlite3.connect(db_file)
 c = conn.cursor()
 
-# Create table
-c.execute('''CREATE TABLE websites
+# Create table if needed
+if useExistingDB == 0:
+    c.execute('''CREATE TABLE website_from_img
              (mul_id text, page_url text, body text)''')
 
 # for resuming ^ ^
@@ -100,9 +104,6 @@ with open(multimedia_dev_details) as csvfileDetail:
         type = row['type']
         event_name = row['event_name']
         abs_path = row['abs_path']
-
-        if type != 'video':
-            continue
 
         # for resuming ^ ^
         count = count + 1
@@ -127,12 +128,12 @@ with open(multimedia_dev_details) as csvfileDetail:
 
         if type == 'video':
             print("===>" + abs_path)
-            text = getTextFromVideoLink(abs_path)
+            text = getTextFromLink(abs_path)
             # accumulate data
             data.append((mul_id, abs_path, text))
 
         # insert data into database
-        c.executemany("INSERT INTO websites VALUES (?,?,?)", data)
+        c.executemany("INSERT INTO website_from_img VALUES (?,?,?)", data)
         conn.commit()
 
 # disconnect from DB
