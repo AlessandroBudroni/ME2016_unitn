@@ -1,5 +1,6 @@
 import sys
 import re
+import os
 from bs4 import BeautifulSoup
 
 dictionaryFile = "stopwords.txt";
@@ -32,6 +33,11 @@ def SplitWords(source):
     return source.split(' ')
 
 def main():
+
+    if (len(sys.argv) <= 1):
+        print('\nERROR: Parameter is missing\n')
+        exit()
+
     dict = {}
     outNoStopWord = []
     outNoHTML = []
@@ -67,9 +73,12 @@ def main():
 
     # write files
 
-    fnoHTML = open(sys.argv[1] + ".noHTML", "w")
-    fnoStopWord = open(sys.argv[1] + ".noStopWord", "w")
-    fKeyword = open(sys.argv[1] + ".keyword", "w")
+    path = sys.argv[1] + "_result/"
+    if not os.path.exists(path): os.makedirs(path)
+
+    fnoHTML = open(path+sys.argv[1] + ".noHTML", "w")
+    fnoStopWord = open(path+sys.argv[1] + ".noStopWord", "w")
+    fKeyword = open(path+sys.argv[1] + ".keyword", "w")
 
     fnoHTML.writelines(outNoHTML)
     fnoStopWord.writelines(outNoStopWord)
