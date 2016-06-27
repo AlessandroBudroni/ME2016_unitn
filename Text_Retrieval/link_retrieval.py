@@ -10,9 +10,11 @@ import re
 # requests library that includes urllib2
 import requests
 import urllib2
+import urlparse as urlparse
 # cookies
 import cookielib
 from bs4 import BeautifulSoup
+import utils as utils
 
 # this function returns 'num' links related to the image (path)
 
@@ -47,13 +49,16 @@ def find_related_links(path, num=10):
     # navigate to the first page of results
     # only select relevant links (their parent has class 'r')
     anchors = soup.findAll('a')
+
     for an in anchors:
       parent = an.parent
       cl = parent.attrs.get('class')
       if cl == ['r']:
-        print(an.attrs.get('href'))
-        links.append(an.attrs.get('href'))
-        nGoodLinks = nGoodLinks + 1
+         #print(an.attrs.get('href'))
+        l = an.attrs.get('href')
+        if utils.isAGoodLink(l):
+          links.append(l)
+          nGoodLinks = nGoodLinks + 1
 
       # if not enough good links, navigate to next page
       cl = an.attrs.get('class')
@@ -68,5 +73,8 @@ def find_related_links(path, num=10):
     else:
       source = opener.open(nextFetchUrl).read()
       soup = BeautifulSoup(source)
+      nextFetchUrl = ''
 
   return links
+
+

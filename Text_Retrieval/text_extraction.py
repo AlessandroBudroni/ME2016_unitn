@@ -12,6 +12,9 @@ import urllib
 import re
 import string
 from bs4 import BeautifulSoup
+import time
+
+
 
 # dataset
 mainPath = 'dataset/'
@@ -41,10 +44,11 @@ for currEvent in events:
   if currEvent == 'Non-Class':
     images = [images[-1]]
   for currImage in images:
+    start_time = time.time()
     if not ((".jpeg" in currImage) or (".jpg" in currImage) or (".png" in currImage) or (".gif" in currImage) or (".svg" in currImage)):
         continue
     print('--- FOR IMAGE %s' % currImage)
-    links = link_retrieval.find_related_links(mainPath + currEvent + '/' + currImage)
+    links = link_retrieval.find_related_links(mainPath + currEvent + '/' + currImage,20)
     currImageName = file_navigator.extract_name(currImage)
     if not os.path.exists(mainPath+currEvent+'/'+currImageName):
       os.mkdir(mainPath+currEvent+'/'+currImageName)
@@ -53,7 +57,7 @@ for currEvent in events:
       linkFile.write('%s\n' % url)
     linkFile.close()
 
-# text extraction from related links and save
+    # text extraction from related links and save
 
     numArticle = 1
     for url in links:
@@ -82,3 +86,6 @@ for currEvent in events:
       except:
         print('Bad Link')
         numArticle += 1
+
+    # measure running time of an image search
+    print("--- %s seconds ---" % (time.time() - start_time))
