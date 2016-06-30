@@ -71,9 +71,10 @@ def find_related_links(path, num=10):
       links = links[:num]
       break
     else:
-      source = opener.open(nextFetchUrl).read()
-      soup = BeautifulSoup(source)
-      nextFetchUrl = ''
+      if nextFetchUrl != '':
+        source = opener.open(nextFetchUrl).read()
+        soup = BeautifulSoup(source)
+        nextFetchUrl = ''
 
   return links
 
