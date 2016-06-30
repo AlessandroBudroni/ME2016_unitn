@@ -6,7 +6,7 @@ modify | modified | modifying | modification
 doctored | doctoring
 retouch | retouched | retouching
 artificial
-synthesize | synthesized | synthesizing
+synthesize | synthesized | synthesizing | synthetic
 false
 man-made
 unnatural
@@ -36,4 +36,11 @@ repost | reposting | reposted
 joke | jokes | joking
 fabricate | fabricated | fabricating | fabrication
 dubious | dubitable
-doubtful
+doubt | doubtful
+faux
+mock
+mislead | misleaded | misleading
+pseudo
+concoct | concocting | concocted
+feign | feigned | feigning
+diddle | diddled | diddling
