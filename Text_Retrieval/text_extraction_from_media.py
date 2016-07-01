@@ -9,21 +9,26 @@ from bs4 import BeautifulSoup
 import time
 import csv
 import sqlite3
+from langdetect import detect
+
 
 # BEGIN FUNCTION DECLARATIONS
 
 # This function gets text from a webpage
 def getTextFromLink(l):
     try:
-        html_page = urllib.urlopen(l).read()
+        opener = urllib.request.build_opener()
+        opener.addheaders = [('User-agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.7 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.7')]
+        html_page = opener.open(l).read()
+
         soup = BeautifulSoup(html_page, "lxml")
 
         # removing all scripts and stype tags
         for script in soup(["script", "style", "a", "href"]):
             script.extract()
 
-        # get the body part
-        text = soup.body.get_text()
+        # get text
+        text = soup.text
 
         return text
 
@@ -35,7 +40,10 @@ def getTextFromLink(l):
 # There are some cases in which the videos come from Dropbox. We ignore these exceptions
 def getTextFromVideoLink(l):
     try:
-        html_page = urllib.urlopen(l).read()
+        opener = urllib.request.build_opener()
+        opener.addheaders = [('User-agent',
+                              'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.7 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.7')]
+        html_page = opener.open(l).read()
         soup = BeautifulSoup(html_page, "lxml")
 
         # removing all scripts and stype tags
@@ -43,8 +51,8 @@ def getTextFromVideoLink(l):
             script.extract()
 
         # get the body part
-        text = soup.title.get_text()
-        text = text + ' ' + soup.find(id="watch-description").get_text()
+        text = soup.text
+        #text = text + ' ' + soup.find(id="watch-description").get_text()
 
         return text
 
@@ -65,17 +73,17 @@ def getTextFromVideoLink(l):
 # BEGIN MAIN SCRIPT
 
 # some definitions
-nPages = 20
+nPages = 10
 
 #development set - multimedia details
 output_dir = 'dataset/devset'
 multimedia_dev_details = output_dir + '/multimedia_dev_details.csv'
 
 # store data to dev.db
-db_file = os.path.join(output_dir, 'dev.db')
+db_file = os.path.join(output_dir, 'dev2.db')
 
 # for debugging, remove file if existed
-useExistingDB = 0 # assign to 1 if wanna use the existing DB
+useExistingDB = 1 # assign to 1 if wanna use the existing DB
 
 if useExistingDB == 0 and os.path.isfile(db_file):
     os.remove(db_file)
@@ -90,10 +98,10 @@ if useExistingDB == 0:
              (mul_id text, page_url text, body text)''')
 
 # for resuming ^ ^
-running_from = 1;
-running_to = 5;
+running_from = 33
+running_to = 50
 
-count = 0;
+count = 0
 
 with open(multimedia_dev_details) as csvfileDetail:
     reader = csv.DictReader(csvfileDetail)
@@ -122,19 +130,27 @@ with open(multimedia_dev_details) as csvfileDetail:
 
             for l in links:
                 text = getTextFromLink(l)
-                print("===>" + l)
-                # accumulate data
-                data.append((mul_id, l, text))
-
+                try:
+                    if detect(text) == 'en':
+                        print("===>" + l)
+                        # accumulate data
+                        data.append((mul_id, l, text))
+                except Exception as e:
+                    print(e)
         if type == 'video':
-            print("===>" + abs_path)
             text = getTextFromLink(abs_path)
-            # accumulate data
-            data.append((mul_id, abs_path, text))
-
+            try:
+                if detect(text) == 'en':
+                    print("===>" + abs_path)
+                    # accumulate data
+                    data.append((mul_id, abs_path, text))
+            except Exception as e:
+                print(e)
         # insert data into database
         c.executemany("INSERT INTO website_from_img VALUES (?,?,?)", data)
         conn.commit()
+
+        time.sleep(45)
 
 # disconnect from DB
 conn.close()
