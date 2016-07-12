@@ -82,12 +82,11 @@ def extract_keywords_from_text(text):
                 else:
                     dict[subString.lower()] += 1
 
-    sumWords = sum(dict.values())
     keywords = []
     freq = []
 
     for key, value in sorted(dict.items(), key=lambda x: x[1], reverse=True):
         keywords.append(key)
-        freq.append(1.0 * value / sumWords)
+        freq.append(1.0 * value)
 
     return (keywords, freq)
