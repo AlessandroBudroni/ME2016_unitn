@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import nltk
 from nltk.stem.snowball import SnowballStemmer
 from nltk.corpus import stopwords
+from textblob import TextBlob
 
 dictionaryFile = "stopwords.txt"
 
@@ -69,12 +70,13 @@ def extract_keywords_from_text(text):
     stopWords = ReadStopWords()
 
     cleanedText = RemoveJunkCharacters(text)
+    cleanedText = cleanedText.lower()
 
     noStopWordText = ''
 
     for subString in SplitWords(cleanedText):
         if (len(subString) > 0):
-            if (not (subString.lower() in stopWords)):
+            if (not (subString in stopWords)):
                 noStopWordText = noStopWordText + subString + ' '
 
                 if (not (subString.lower() in dict)):
@@ -90,3 +92,22 @@ def extract_keywords_from_text(text):
         freq.append(1.0 * value)
 
     return (keywords, freq)
+    
+def extract_clean_text (text):
+    # load stop words
+    stopWords = ReadStopWords()
+
+    cleanedText = RemoveJunkCharacters(text)
+    cleanedText = cleanedText.lower()
+
+    stemmer = SnowballStemmer("english")
+    
+    noStopWordText = ''
+
+    for subString in SplitWords(cleanedText):
+        if (len(subString) > 0):
+            subString = stemmer.stem(subString)
+            if (not subString in stopWords):
+                noStopWordText = noStopWordText + subString + ' '
+    
+    return noStopWordText
