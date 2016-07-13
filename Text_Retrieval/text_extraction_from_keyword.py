@@ -38,14 +38,14 @@ def getTextFromLink(l):
 nPages = 10
 
 #development set - multimedia details
-output_dir = 'dataset/devset'
+output_dir = 'dataset/testset'
 event_dev_details = output_dir + '/event_related_keywords.csv'
 
 # store data to dev.db
-db_file = os.path.join(output_dir, 'dev.db')
+db_file = os.path.join(output_dir, 'text_from_keywords.db')
 
 # for debugging, remove file if existed
-useExistingDB = 0 # assign to 1 if wanna use the existing DB
+useExistingDB = 1 # assign to 1 if wanna use the existing DB
 
 if useExistingDB == 0 and os.path.isfile(db_file):
     os.remove(db_file)
@@ -61,12 +61,22 @@ if useExistingDB == 0:
 
 res = c.execute('SELECT * FROM website_from_keywords')
 
+# for resuming ^ ^
+running_from = 34
+
+
 with open(event_dev_details) as csvfileDetail:
     reader = csv.DictReader(csvfileDetail)
     # read row by csvfileDetails
+    count = 0
     for row in reader:
+        count += 1
+        if count < running_from:
+            continue
+
         keywords = row['keywords']
         event_name = row['event_name']
+        print('processing ', count, ':', keywords)
 
         links = searcher.searchongoogle(keywords, nPages)
 
@@ -82,6 +92,6 @@ with open(event_dev_details) as csvfileDetail:
         conn.commit()
 
         #please google
-        time.sleep(30)
+        time.sleep(45)
 
 conn.close()

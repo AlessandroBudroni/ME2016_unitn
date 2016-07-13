@@ -29,13 +29,14 @@ def searchongoogle(text, num):
                 break
 
         for link in s.links:
-            l = str(link)[str(link).index('http'):str(link).__len__() - 1]
-            if utils.isAGoodLink(l) and not linklist.__contains__(l):
-                linklist.append(l)
-                count += 1
-                if count == num:
-                    print('Founded ' + str(linklist.__len__()) + ' link on Google for: ' + text)
-                    return linklist
+            if link.link.find('http') != -1:
+                l = str(link)[str(link).index('http'):str(link).__len__() - 1]
+                if utils.isAGoodLink(l) and not linklist.__contains__(l):
+                    linklist.append(l)
+                    count += 1
+                    if count == num:
+                        print('Founded ' + str(linklist.__len__()) + ' link on Google for: ' + text)
+                        return linklist
 
-    print('Founded ' + str(linklist.__len__()) + ' link on Google for: ' + text)
+    print('Founded ', count, ' link on Google for: ' + text)
     return linklist

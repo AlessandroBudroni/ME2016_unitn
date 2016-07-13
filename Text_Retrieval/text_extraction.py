@@ -5,7 +5,7 @@
 # IF A NUMBER.TXT FILE IS MISSING THEN IT WAS A BAD LINK
 
 import file_navigator
-import link_retrieval
+import link_retrieval2
 import os
 import sys
 import urllib
@@ -48,7 +48,7 @@ for currEvent in events:
     if not ((".jpeg" in currImage) or (".jpg" in currImage) or (".png" in currImage) or (".gif" in currImage) or (".svg" in currImage)):
         continue
     print('--- FOR IMAGE %s' % currImage)
-    links = link_retrieval.find_related_links(mainPath + currEvent + '/' + currImage,20)
+    links = link_retrieval2.find_related_links(mainPath + currEvent + '/' + currImage, 20)
     currImageName = file_navigator.extract_name(currImage)
     if not os.path.exists(mainPath+currEvent+'/'+currImageName):
       os.mkdir(mainPath+currEvent+'/'+currImageName)

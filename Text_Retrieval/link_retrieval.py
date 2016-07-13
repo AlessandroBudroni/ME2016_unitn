@@ -75,7 +75,8 @@ def find_related_links(path, num=10):
         source = opener.open(nextFetchUrl).read()
         soup = BeautifulSoup(source)
         nextFetchUrl = ''
-
+      else:
+        return links
   return links
 
 

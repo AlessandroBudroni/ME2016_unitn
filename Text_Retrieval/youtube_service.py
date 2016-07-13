@@ -1,9 +1,7 @@
 import httplib2
 import os
-import sys
 import argparse
-from apiclient.discovery import build_from_document
-from apiclient.errors import HttpError
+from apiclient.discovery import build
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.file import Storage
 from oauth2client import tools
@@ -45,12 +43,14 @@ def get_authenticated_service(videoID):
   if credentials is None or credentials.invalid:
     credentials = run_flow(flow, storage, flags)
 
+  return build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, \
+               developerKey='AIzaSyBHtGi8R0VXINpTKvuGGUolCTjJkiaYSko')
+
   # Trusted testers can download this discovery document from the developers page
   # and it should be in the same directory with the code.
-  with open("youtube-v3-discoverydocument.json", "r") as f:
-    doc = f.read()
-    return build_from_document(doc, http=credentials.authorize(httplib2.Http()))
-
+  # with open("youtube-v3-discoverydocument.json", "r") as f:
+  #   doc = f.read()
+  #   return build(doc, http=credentials.authorize(httplib2.Http()))
 
 
 # Call the API's commentThreads.list method to list the existing comment threads.
@@ -82,13 +82,13 @@ def list_captions(youtube, video_id):
     id = item["id"]
     name = item["snippet"]["name"]
     language = item["snippet"]["language"]
-    print "Caption track '%s(%s)' in '%s' language." % (name, id, language)
 
   return results["items"]
 
 def get_youtube_comments(link):
     o = urlparse(link)
-    videoID = o.query.replace('v=', '')
+    query = o.query.split('&')
+    videoID = query[0].replace('v=', '')
     youtube = get_authenticated_service(videoID)
 
     # All the available methods are used in sequence just for the sake of an example.
