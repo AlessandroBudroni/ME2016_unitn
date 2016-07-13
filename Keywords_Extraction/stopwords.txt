@@ -168,6 +168,7 @@ forth
 found
 four
 from
+function
 further
 furthermore
 g
@@ -194,7 +195,9 @@ have
 haven't
 having
 he
+header
 hed
+helvetica
 hence
 her
 here
@@ -245,6 +248,7 @@ its
 itself
 i've
 j
+js
 just
 k
 keep	
@@ -285,6 +289,8 @@ makes
 many
 may
 maybe
+max
+maxwidth
 me
 mean
 means
@@ -294,6 +300,8 @@ merely
 mg
 might
 million
+min
+minwidth
 miss
 ml
 more
@@ -305,6 +313,7 @@ mrs
 much
 mug
 must
+mw
 my
 myself
 n
@@ -484,6 +493,7 @@ specifically
 specified
 specify
 specifying
+static
 still
 stop
 strongly
@@ -586,6 +596,7 @@ using
 usually
 v
 value
+var
 various
 've
 very
