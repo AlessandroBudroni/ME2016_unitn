@@ -22,7 +22,7 @@ def getTextFromLink(l):
         for script in soup(["script", "style", "a", "href"]):
             script.extract()
 
-        # get text
+        # get the body part
         text = soup.text
 
         return text
@@ -31,18 +31,12 @@ def getTextFromLink(l):
         return 'Bad Link'
 
 
-
-# BEGIN MAIN SCRIPT
-
-# some definitions
-nPages = 10
-
 #development set - multimedia details
-output_dir = 'dataset/testset'
+output_dir = 'dataset/devset'
 event_dev_details = output_dir + '/event_related_keywords.csv'
 
 # store data to dev.db
-db_file = os.path.join(output_dir, 'text_from_keywords.db')
+db_file = os.path.join(output_dir, 'dev.db')
 
 # for debugging, remove file if existed
 useExistingDB = 1 # assign to 1 if wanna use the existing DB
@@ -54,44 +48,15 @@ if useExistingDB == 0 and os.path.isfile(db_file):
 conn = sqlite3.connect(db_file)
 c = conn.cursor()
 
-# Create table if needed
-if useExistingDB == 0:
-    c.execute('''CREATE TABLE website_from_keywords
-             (event text, page_url text, body text)''')
-
 res = c.execute('SELECT * FROM website_from_keywords')
 
-# for resuming ^ ^
-running_from = 34
-
-
-with open(event_dev_details) as csvfileDetail:
-    reader = csv.DictReader(csvfileDetail)
-    # read row by csvfileDetails
-    count = 0
-    for row in reader:
-        count += 1
-        if count < running_from:
-            continue
-
-        keywords = row['keywords']
-        event_name = row['event_name']
-        print('processing ', count, ':', keywords)
-
-        links = searcher.searchongoogle(keywords, nPages)
-
-        data = []
-        for l in links:
-            text = getTextFromLink(l)
-            print("===>" + l)
-            # accumulate data
-            data.append((event_name, l, text))
-
-        # insert data into database
-        c.executemany("INSERT INTO website_from_keywords VALUES (?,?,?)", data)
-        conn.commit()
-
-        #please google
-        time.sleep(45)
+for row in res:
+    if row[2] != 'Bad Link':
+        continue
+    text = getTextFromLink(row[1])
+    print('process: ',row[0], '-', row[1])
+    data = [(row[0], row[1], text)]
+    c.execute("UPDATE website_from_keywords SET body = ? WHERE event_name = ? and page_url = ?", text, row[0], row[1])
+    conn.commit()
 
 conn.close()

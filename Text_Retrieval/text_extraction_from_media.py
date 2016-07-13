@@ -1,10 +1,7 @@
 import file_navigator
 import link_retrieval
 import os
-import sys
 import urllib
-import re
-import string
 from bs4 import BeautifulSoup
 import time
 import csv
@@ -61,11 +58,11 @@ def getTextFromVideoLink(l):
 nPages = 10
 
 #development set - multimedia details
-output_dir = 'dataset/devset'
-multimedia_dev_details = output_dir + '/multimedia_details.csv'
+dataset = 'testset'
+multimedia_dev_details = os.path.join('dataset', dataset, 'multimedia_details.csv')
 
 # store data to dev.db
-db_file = os.path.join(output_dir, 'dev2.db')
+db_file = os.path.join('dataset', dataset, 'text_from_media.db')
 
 # for debugging, remove file if existed
 useExistingDB = 1 # assign to 1 if wanna use the existing DB
@@ -83,8 +80,8 @@ if useExistingDB == 0:
              (mul_id text, page_url text, body text)''')
 
 # for resuming ^ ^
-running_from = 408
-running_to = 400
+running_from = 119
+running_to = 10
 
 count = 0
 
@@ -122,12 +119,13 @@ with open(multimedia_dev_details) as csvfileDetail:
                         data.append((mul_id, l, text))
                 except Exception as e:
                     print(e)
+
         if type == 'video':
             text = getTextFromVideoLink(abs_path)
-            #if detect(text) == 'en':
-            print("===>" + abs_path)
-            # accumulate data
-            data.append((mul_id, abs_path, text))
+            if text != '':
+                print("===>" + abs_path)
+                # accumulate data
+                data.append((mul_id, abs_path, text))
 
         # insert data into database
         c.executemany("INSERT INTO website_from_img VALUES (?,?,?)", data)
