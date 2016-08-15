@@ -58,7 +58,8 @@ def getTextFromVideoLink(l):
 nPages = 10
 
 #development set - multimedia details
-dataset = 'testset'
+dataset = 'testset_subtask'
+
 multimedia_dev_details = os.path.join('dataset', dataset, 'multimedia_details.csv')
 
 # store data to dev.db
@@ -80,8 +81,8 @@ if useExistingDB == 0:
              (mul_id text, page_url text, body text)''')
 
 # for resuming ^ ^
-running_from = 119
-running_to = 10
+running_from = 28
+running_to = 1
 
 count = 0
 
@@ -109,7 +110,6 @@ with open(multimedia_dev_details) as csvfileDetail:
 
         if type == 'image':
             links = link_retrieval.find_related_links(abs_path, nPages)
-
             for l in links:
                 text = getTextFromLink(l)
                 try:
@@ -130,8 +130,10 @@ with open(multimedia_dev_details) as csvfileDetail:
         # insert data into database
         c.executemany("INSERT INTO website_from_img VALUES (?,?,?)", data)
         conn.commit()
-
-        time.sleep(45)
+        if count % 10 == 0:
+            time.sleep(300)
+        else:
+            time.sleep(45)
 
 # disconnect from DB
 conn.close()

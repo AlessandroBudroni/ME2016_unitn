@@ -12,7 +12,7 @@ import pickle
 import numpy as np
 from nltk.stem.snowball import SnowballStemmer
 
-dataset = 'testset'
+dataset = 'testset_subtask'
 
 db2 = 'text_from_media.db'
 db2_path = '../Text_Retrieval/dataset/' + dataset + '/' + db2
@@ -67,7 +67,7 @@ with open(multimedia_detail_path) as csvfileDetail:
     for row in reader:
         mul_id = row['mul_id'].strip("\n\t ")
 
-        print('Processing media file: ', mul_id)
+        #print('Processing media file: ', mul_id)
 
         type = row['type']
         event_name = row['event_name']
@@ -109,6 +109,8 @@ with open(multimedia_detail_path) as csvfileDetail:
             features.append(feature)
 
             effective_topics.append(mul_id)
+        else:
+            print('n_documents = 0: ', mul_id)
 
         # reset all values in dictionaries
         pos_counting_dict = pos_counting_dict.fromkeys(pos_counting_dict, 0.0)

@@ -106,7 +106,9 @@ def get_youtube_comments(link):
 
         for child_comments in video_comments:
             cmt = child_comments["snippet"]["textDisplay"] + '\n'
-            if detect(cmt) == 'en':
-                text += cmt
-
+            try:
+                if detect(cmt) == 'en':
+                    text += cmt
+            except:
+                text += ''
     return text
