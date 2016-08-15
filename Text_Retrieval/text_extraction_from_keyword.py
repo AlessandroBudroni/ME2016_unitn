@@ -38,7 +38,7 @@ def getTextFromLink(l):
 nPages = 10
 
 #development set - multimedia details
-output_dir = 'dataset/testset'
+output_dir = 'dataset/testset_subtask'
 event_dev_details = output_dir + '/event_related_keywords.csv'
 
 # store data to dev.db
@@ -62,7 +62,8 @@ if useExistingDB == 0:
 res = c.execute('SELECT * FROM website_from_keywords')
 
 # for resuming ^ ^
-running_from = 34
+running_from = 1
+running_to = 1
 
 
 with open(event_dev_details) as csvfileDetail:
@@ -73,9 +74,12 @@ with open(event_dev_details) as csvfileDetail:
         count += 1
         if count < running_from:
             continue
+        if count > running_to:
+            break
 
-        keywords = row['keywords']
-        event_name = row['event_name']
+
+        keywords = row['keywords'].strip('\n\t ')
+        event_name = row['event_name'].strip('\n\t ')
         print('processing ', count, ':', keywords)
 
         links = searcher.searchongoogle(keywords, nPages)

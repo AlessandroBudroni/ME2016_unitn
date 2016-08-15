@@ -1,7 +1,7 @@
 from urllib.parse import urlparse
 
 
-# this function check if a link is good or not
+# this function checks if a link is good or not
 def isAGoodLink(link):
 
   bad_sites = ['https://www.youtube.com', \

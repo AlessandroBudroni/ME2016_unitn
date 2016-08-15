@@ -10,7 +10,6 @@ import re
 # requests library that includes urllib2
 import requests
 import urllib
-import urllib.parse as urlparse
 # cookies
 import http.cookiejar as cookielib
 from bs4 import BeautifulSoup
@@ -35,8 +34,9 @@ def find_related_links(path, num=10):
   opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
 
   opener.addheaders = [('User-agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.7 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.7')]
+  #opener.addheaders = [('User-agent', 'Mozilla/5.0')]
   fetchUrl = response.headers['Location']
-
+  fetchUrl += '&hl=en'
   source = opener.open(fetchUrl).read()
 
   nGoodLinks = 0
@@ -77,6 +77,7 @@ def find_related_links(path, num=10):
         nextFetchUrl = ''
       else:
         return links
+
   return links
 
 

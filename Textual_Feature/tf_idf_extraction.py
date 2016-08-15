@@ -11,7 +11,7 @@ import extract_keywords_from_text as kwe
 import sqlite3
 import pickle
 
-dataset = 'testset' # or test set
+dataset = 'testset_subtask' # or test set
 
 db1 = 'text_from_keywords.db'
 db1_path = '../Text_Retrieval/dataset/' + dataset + '/' + db1

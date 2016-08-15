@@ -127,6 +127,9 @@ with open(multimedia_detail_path) as csvfileDetail:
 
             effective_topics.append(mul_id)
 
+        else:
+            print('n_documents = 0 OR not be used: ', mul_id)
+
         # reset all values in dictionaries
         pos_counting_dict = pos_counting_dict.fromkeys(pos_counting_dict, 0.0)
         neg_counting_dict = neg_counting_dict.fromkeys(neg_counting_dict, 0.0)

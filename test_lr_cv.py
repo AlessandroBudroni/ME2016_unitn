@@ -41,12 +41,12 @@ def selectively_split_data():
         label = posts_dict[p][1].strip('\n\t ')
         if w in training_event_dict:
             l = training_event_dict[w]
-            if l[0] < 300 and label == '-1':
+            if l[0] < 100 and label == '-1':
                 training_ind.append(ind)
                 l[0] += 1
                 training_event_dict[w] = l
                 training_mul_dict[mul_id] = 1
-            elif l[1] < 300 and label == '1':
+            elif l[1] < 100 and label == '1':
                 training_ind.append(ind)
                 l[1] += 1
                 training_event_dict[w] = l
@@ -355,7 +355,7 @@ def main():
     elif classifier2 == 'svm':
         topic_detector = svm.SVC()
     elif classifier2 == 'randomforest':
-        topic_detector = ExtraTreesClassifier(n_estimators=100, max_depth=None,
+        topic_detector = ExtraTreesClassifier(n_estimators=200, max_depth=None,
                                               min_samples_split=1, random_state=0)
 
     posts_dict = None
@@ -429,7 +429,6 @@ def main():
 
     # refine results
     testing_posts = read_list('output/testing_posts.dat')
-
 
     mul_list_test = {}
     for p in testing_posts:
